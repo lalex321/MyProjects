@@ -10,9 +10,12 @@ public class LSDSort {
 	public static void main(String[] args) {
 		
 		int[] data = generate();
-		
+				
 		long start = System.currentTimeMillis();
-		Arrays.sort(data);
+//		Arrays.sort(data);
+		
+		sort1.mysort(data);
+		
 		long stop = System.currentTimeMillis();
 		
 		System.out.println("Elapsed = " + (stop - start));
@@ -30,4 +33,8 @@ public class LSDSort {
 		return data;
 	}
 	
+
+
+
 }
+
